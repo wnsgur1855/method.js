@@ -1,5 +1,5 @@
 // foreach()는 배열을 순회하면서 인자로 전달한 함수를 호출하는 반복문 입니다. 배열뿐만아니라, set이나 map에서도 사용 가능합니다
-// value:현재 값   index:현재 인덱스
+// currentvalue:현재 값   index:현재 인덱스
 const arr = ['apple', 'kiwi', 'large','small'];
 function solution(name) {
     console.log(name);
@@ -48,3 +48,16 @@ function solution(a,b) {                         //a와b의 배열 길이가 같
 
 
 //1.내적을 return한다. a와 b의 같은 인덱스끼리 곱해서 더한 값을 return한다.
+//map, forEach에서 return을 그냥 할 경우 undefined를 반환한다. (but for문은 return으로 빠져나오는 게 가능하다)
+
+
+
+
+//**간단히 사용법 익히기
+for( let i = 0; i < n; i++) {
+    answer += a[i]&b[i]
+}
+
+forEach((cur, idx) => {
+    answer += cur*b[i]          //cul은 currentvalue 그 자체이기때무에 [i]를 불러올 필요가 없다. 
+})                              // 즉 a[i] = cur
