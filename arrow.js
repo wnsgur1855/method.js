@@ -8,3 +8,7 @@
         }
  //변수값에 파라미터()가들어갈 수 없다
 
+function hello(name) {
+    return -1
+}
+let hello = (name) => {}
